@@ -16,7 +16,7 @@
 # AWS S3 Bucket for package and deploy #
 ########################################
 # NOTE: This bucket must exist before the GitHub Action, and match the name of your S3 bucket on Amazon
-s3_bucket: github-sam-test
+s3_bucket: cdn.skimcloud.com
 
 ##################################
 # AWS Cloud Formation Stack name #
@@ -34,10 +34,3 @@ aws_stack_name: mystack
 # under the '.github' folder:
 # sam_template: .github/template.yml
 sam_template: sam-template.yml
-
-################################
-# region for connection to AWS #
-################################
-# Default region is: us-west-2
-# if not provided below
-region: us-west-2
